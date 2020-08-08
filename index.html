@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8bit Etch-a-sketch</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <h1>ETCH-A-SKETCH</h1>
+      <p><span class="subTitleBackground">8BIT SKETCHPAD</span></p>
+    </div>
+  </header>
+
+
+  <div class="canvasWrapper">
+    <canvas width="900px" height="600px" id="canvas"></canvas>
+  </div>
+
+  <div class="controllerWrapper">
+    <div class="controller">
+      <div class="controllerStart">
+        <div class="control1"></div>
+        <button type="button" class="control2 buttonUp"></button>
+        <div class="control3"></div>
+        <button type="button" class="control4 buttonLeft"></button>
+        <div class="control5"></div>
+        <button type="button" class="control6 buttonRight"></button>
+        <div class="control7"></div>
+        <button type="button" class="control8 buttonDown"></button>
+        <div class="control9"></div>
+      </div>
+      <div class="controllerMiddle">
+        <button class="infoButton" type="button"></button>
+      </div>
+      <div class="controllerEnd">
+        <button class="reset">R</button>
+      </div>
+    </div>
+    <button type="button" class="toggleControllerButton">
+      <i class="fas fa-gamepad fa-3x fa-rotate-90"></i>
+    </button>
+  </div>
+
+  <div class="colorSelect">
+    <p>COLORS</p>
+    <button class="colorButton red" type="button"></button>
+    <button class="colorButton blue" type="button"></button>
+    <button class="colorButton green" type="button"></button>
+    <button class="colorButton yellow" type="button"></button>
+    <button class="colorButton orange" type="button"></button>
+    <button class="colorButton gray" type="button"></button>
+    <button class="colorButton white" type="button"></button>
+    <button class="colorButton black" type="button"></button>
+  </div>
+  <script src="./etch-a-sketch.js"></script>
+</body>
+
+</html>
